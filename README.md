@@ -8,8 +8,14 @@ Convert a date into a flutter stable version. This can be a fun thing to do when
 
 run `dart run lib/update_assets.dart` to update the assets file.
 
+## Build an deploy
+
+`flutter build web`
+`cp build/web/ ./docs/`
+
 ## TODO:
 
 - [ ] create github action to update the assets file
-- [ ] create github action to publish the package
-- [ ] connect with domain and publish to gh-pages
+- [x] create github action to publish the page on commit
+- [ ] create github action to build and publish page on commit
+- [x] connect with domain and publish to gh-pages
